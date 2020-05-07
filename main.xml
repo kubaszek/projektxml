@@ -2,21 +2,160 @@
 
 <wypozyczalnia>
 	<pracownicy>
+	<pracownik>
+		<imie></imie>
+		<nazwisko></nazwisko>
+		<data_ur></data_ur>
+		<nr_tel></nr_tel>
+		<filia></filia>
+	</pracownik>
+	<pracownik>
+		<imie></imie>
+		<nazwisko></nazwisko>
+		<data_ur></data_ur>
+		<nr_tel></nr_tel>
+		<filia></filia>
+	</pracownik>
+	<pracownik>
+		<imie></imie>
+		<nazwisko></nazwisko>
+		<data_ur></data_ur>
+		<nr_tel></nr_tel>
+		<filia></filia>
+	</pracownik>
+	<pracownik>
+		<imie></imie>
+		<nazwisko></nazwisko>
+		<data_ur></data_ur>
+		<nr_tel></nr_tel>
+		<filia></filia>
+	</pracownik>
 	</pracownicy>
 	
 	<filie>
+	<filia>
+		</miasto></miasto>
+		<ulica></ulica>
+		<nr></nr>
+	</filia>
+	<filia>
+		</miasto></miasto>
+		<ulica></ulica>
+		<nr></nr>
+	</filia>
+	<filia>
+		</miasto></miasto>
+		<ulica></ulica>
+		<nr></nr>
+	</filia>
+	<filia>
+		</miasto></miasto>
+		<ulica></ulica>
+		<nr></nr>
+	</filia>
 	</filie>
 
 	<autadostawcze>
+	<dostawczak>
+		<marka></marka>
+		<model></model>
+		<oznaczenie></oznaczenie>
+		<filia></filia>
+	</dostawczak>
+	<dostawczak>
+		<marka></marka>
+		<model></model>
+		<oznaczenie></oznaczenie>
+		<filia></filia>
+	</dostawczak><dostawczak>
+		<marka></marka>
+		<model></model>
+		<oznaczenie></oznaczenie>
+		<filia></filia>
+	</dostawczak>
+	<dostawczak>
+		<marka></marka>
+		<model></model>
+		<oznaczenie></oznaczenie>
+		<filia></filia>
+	</dostawczak>
 	</autadostawcze>
 	
 	<autaosobowe>
+	<osobowe>
+		<marka></marka>
+		<model></model>
+		<oznaczenie></oznaczenie>
+		<miejsca></miejsca>
+		<filia></filia>
+	</osobowe>
+	<osobowe>
+		<marka></marka>
+		<model></model>
+		<oznaczenie></oznaczenie>
+		<miejsca></miejsca>
+		<filia></filia>
+	</osobowe>
+	<osobowe>
+		<marka></marka>
+		<model></model>
+		<oznaczenie></oznaczenie>
+		<miejsca></miejsca>
+		<filia></filia>
+	</osobowe>
+	<osobowe>
+		<marka></marka>
+		<model></model>
+		<oznaczenie></oznaczenie>
+		<miejsca></miejsca>
+		<filia></filia>
+	</osobowe>
 	</autaosobowe>
 	
 	<busy>
+	<osobowe>
+		<marka></marka>
+		<model></model>
+		<miejsca></miejsca>
+		<filia></filia>
+	</osobowe>
+	<osobowe>
+		<marka></marka>
+		<model></model>
+		<miejsca></miejsca>
+		<filia></filia>
+	</osobowe>
+	<osobowe>
+		<marka></marka>
+		<model></model>
+		<miejsca></miejsca>
+		<filia></filia>
+	</osobowe>
+	<osobowe>
+		<marka></marka>
+		<model></model>
+		<miejsca></miejsca>
+		<filia></filia>
+	</osobowe>
 	</busy>
 	
 	<marki>
+	<marka>
+		<nazwa></nazwa>
+		<kraj></kraj>
+	</marka>
+	<marka>
+		<nazwa></nazwa>
+		<kraj></kraj>
+	</marka>
+	<marka>
+		<nazwa></nazwa>
+		<kraj></kraj>
+	</marka>
+	<marka>
+		<nazwa></nazwa>
+		<kraj></kraj>
+	</marka>
 	</marki>
 
 </wypozyczalnia>
