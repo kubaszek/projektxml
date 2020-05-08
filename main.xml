@@ -1,4 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/css" href="main.css" ?>
 
 <wypozyczalnia>
 	<pracownicy>
@@ -7,78 +8,99 @@
 		<nazwisko>Kowalski</nazwisko>
 		<data_ur>1994-10-12</data_ur>
 		<nr_tel>730-126-456</nr_tel>
-		<filia>84200</filia>
+		<miejsce>84200</miejsce>
 	</pracownik>
 	<pracownik>
 		<imie>Jerzy</imie>
 		<nazwisko>Faraon</nazwisko>
 		<data_ur>1990-08-15</data_ur>
 		<nr_tel>750-856-896</nr_tel>
-		<filia>82000</filia>
+		<miejsce>82000</miejsce>
 	</pracownik>
 	<pracownik>
 		<imie>Kornel</imie>
 		<nazwisko>Juwal</nazwisko>
 		<data_ur>1989-01-03</data_ur>
 		<nr_tel>784-525-362</nr_tel>
-		<filia>84100</filia>
+		<miejsce>84100</miejsce>
 	</pracownik>
 	<pracownik>
 		<imie>Adam</imie>
 		<nazwisko>Bogdalczyk</nazwisko>
 		<data_ur>1985-02-12</data_ur>
 		<nr_tel>693-365-456</nr_tel>
-		<filia>81100</filia>
+		<miejsce>81100</miejsce>
 	</pracownik>
 	</pracownicy>
 	
 	<filie>
 	<filia>
-		</miasto>Wejherowo</miasto>
+		<miasto>Wejherowo</miasto>
 		<ulica>Gdańska</ulica>
 		<nr>15</nr>
 	</filia>
 	<filia>
-		</miasto>Rumia</miasto>
+		<miasto>Rumia</miasto>
 		<ulica>Towarowa</ulica>
 		<nr>102</nr>
 	</filia>
 	<filia>
-		</miasto>Gdynia</miasto>
+		<miasto>Gdynia</miasto>
 		<ulica>Hutnicza</ulica>
 		<nr>210</nr>
 	</filia>
 	<filia>
-		</miasto>Gdańsk</miasto>
+		<miasto>Gdańsk</miasto>
 		<ulica>Koparska</ulica>
 		<nr>85</nr>
 	</filia>
 	</filie>
+
+
+	<firmy>
+	<firma>
+		<nazwa>Mercedes</nazwa>
+		<kraj>Niemcy</kraj>
+	</firma>
+	<firma>
+		<nazwa>Citroen</nazwa>
+		<kraj>Francja</kraj>
+	</firma>
+	<firma>
+		<nazwa>Skoda</nazwa>
+		<kraj>Czechy</kraj>
+	</firma>
+	<firma>
+		<nazwa>Toyota</nazwa>
+		<kraj>Japonia</kraj>
+	</firma>
+	</firmy>
+
 
 	<autadostawcze>
 	<dostawczak>
 		<marka>Mercedes</marka>
 		<model>Vito</model>
 		<oznaczenie>W447</oznaczenie>
-		<filia>84200</filia>
+		<lokalizacja>84200</lokalizacja>
 	</dostawczak>
 	<dostawczak>
 		<marka>Mercedes</marka>
 		<model>Vito</model>
 		<oznaczenie>W638</oznaczenie>
-		<filia>84200</filia>
+		<lokalizacja>84200</lokalizacja>
 	</dostawczak>
 	<dostawczak>
 		<marka>Citroen</marka>
 		<model>Berlingo</model>
 		<oznaczenie>1.6HDi</oznaczenie>
-		<filia>82000</filia>
+		<lokalizacja>82000</lokalizacja>
 	</dostawczak>
 	<dostawczak>
 		<marka>Toyota</marka>
 		<model>ProAce</model>
 		<oznaczenie>L2H1</oznaczenie>
-		<filia>84100</filia>
+		<lokalizacja>84100</lokalizacja>
 	</dostawczak>
 	</autadostawcze>
 	
@@ -88,28 +110,28 @@
 		<model>Fabia</model>
 		<oznaczenie>II 1.4i</oznaczenie>
 		<miejsca>5</miejsca>
-		<filia>84200</filia>
+		<lokalizacja>84200</lokalizacja>
 	</osobowe>
 	<osobowe>
 		<marka>Citroen</marka>
 		<model>C1</model>
 		<oznaczenie>1.0</oznaczenie>
 		<miejsca>4</miejsca>
-		<filia>82000</filia>
+		<lokalizacja>82000</lokalizacja>
 	</osobowe>
 	<osobowe>
 		<marka>Toyota</marka>
 		<model>Avensis</model>
 		<oznaczenie>II 1.8 vvti</oznaczenie>
 		<miejsca>5</miejsca>
-		<filia>84100</filia>
+		<lokalizacja>84100</lokalizacja>
 	</osobowe>
 	<osobowe>
 		<marka>Mercedes</marka>
 		<model>AMG-GT</model>
 		<oznaczenie>R Drift</oznaczenie>
 		<miejsca>2</miejsca>
-		<filia>81100</filia>
+		<lokalizacja>81100</lokalizacja>
 	</osobowe>
 	</autaosobowe>
 	
@@ -118,45 +140,28 @@
 		<marka>Citroen</marka>
 		<model>Jumper</model>
 		<miejsca>8</miejsca>
-		<filia>82000</filia>
+		<lokalizacja>82000</lokalizacja>
 	</bus>
 	<bus>
 		<marka>Toyota</marka>
 		<model>Hiace</model>
 		<miejsca>17</miejsca>
-		<filia>84100</filia>
+		<lokalizacja>84100</lokalizacja>
 	</bus>
 	<bus>
 		<marka>Citroen</marka>
 		<model>SpaceTourer</model>
 		<miejsca>9</miejsca>
-		<filia>81100</filia>
+		<lokalizacja>81100</lokalizacja>
 	</bus>
 	<bus>
 		<marka>Mercedes</marka>
 		<model>Sprinter</model>
 		<miejsca>20</miejsca>
-		<filia>81100</filia>
+		<lokalizacja>81100</lokalizacja>
 	</bus>
 	</busy>
 	
-	<marki>
-	<marka>
-		<nazwa>Mercedes</nazwa>
-		<kraj>Niemcy</kraj>
-	</marka>
-	<marka>
-		<nazwa>Citroen</nazwa>
-		<kraj>Francja</kraj>
-	</marka>
-	<marka>
-		<nazwa>Skoda</nazwa>
-		<kraj>Czechy</kraj>
-	</marka>
-	<marka>
-		<nazwa>Toyota</nazwa>
-		<kraj>Japonia</kraj>
-	</marka>
-	</marki>
+	
 
 </wypozyczalnia>

@@ -1,0 +1,149 @@
+wypozyczalnia{
+	background-color: coral;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+pracownicy:before{
+	content: "PRACOWNICY";
+}
+filie:before{
+	content: "FILIE WYPOŻYCZALNI";
+}
+firmy:before{
+	content: "MARKI POJAZDÓW";
+}
+autadostawcze:before{
+	content: "AUTA DOSTAWCZE";
+}
+autaosobowe:before{
+	content: "AUTA OSOBOWE";
+}
+busy:before{
+	content: "BUSY";
+}
+
+pracownicy{
+	align-self: left;
+	background-color: grey;
+	width: 25%;
+	height: 60%;
+	margin: 2.5%;
+	padding: 15px;
+	float: left;
+	text-align: left;
+	border-style: solid;	
+}
+
+pracownik{
+	border-style: solid;
+	margin: 15px;
+	padding: 1%;
+	height: 10%;
+	display: block;
+}
+filie{
+	align-self: center;
+	background-color: grey;
+	width: 25%;
+	height: 60%;
+	margin: 2.5%;
+	padding: 15px;
+	float: left;
+	text-align: left;
+	border-style: solid;
+	
+}
+
+filia{
+	border-style: solid;
+	margin: 15px;
+	padding: 1%;
+	height: 10%;
+	display: block;
+}
+
+
+firmy{
+	align-self: right;
+	background-color: grey;
+	width: 25%;
+	height: 60%;
+	margin: 2.5%;
+	padding: 15px;
+	float: left;
+	text-align: left;
+	border-style: solid;
+}
+
+firma{
+	border-style: solid;
+	margin: 15px;
+	padding: 1%;
+	height: 10%;
+	display: block;
+}
+
+autadostawcze{
+	align-self: right;
+	background-color: grey;
+	width: 25%;
+	height: 60%;
+	margin: 2.5%;
+	padding: 15px;
+	float: left;
+	text-align: left;
+	border-style: solid;
+}
+
+dostawczak{
+	border-style: solid;
+	margin: 15px;
+	padding: 1%;
+	height: 10%;
+	display: block;
+
+}
+
+autaosobowe{
+	align-self: center;
+	background-color: grey;
+	width: 25%;
+	height: 60%;
+	margin: 2.5%;
+	padding: 15px;
+	float: left;
+	text-align: left;
+	border-style: solid;
+	
+}
+
+osobowe{
+	border-style: solid;
+	margin: 15px;
+	padding: 1%;
+	height: 10%;
+	display: block;
+}
+
+busy{
+	align-self: center;
+	background-color: grey;
+	width: 25%;
+	height: 60%;
+	margin: 2.5%;
+	padding: 15px;
+	float: left;
+	text-align: left;
+	border-style: solid;
+	
+}
+
+bus{
+	border-style: solid;
+	margin: 15px;
+	padding: 1%;
+	height: 10%;
+	display: block;
+
+}
