@@ -3,158 +3,159 @@
 <wypozyczalnia>
 	<pracownicy>
 	<pracownik>
-		<imie></imie>
-		<nazwisko></nazwisko>
-		<data_ur></data_ur>
-		<nr_tel></nr_tel>
-		<filia></filia>
+		<imie>Andrzej</imie>
+		<nazwisko>Kowalski</nazwisko>
+		<data_ur>1994-10-12</data_ur>
+		<nr_tel>730-126-456</nr_tel>
+		<filia>84200</filia>
 	</pracownik>
 	<pracownik>
-		<imie></imie>
-		<nazwisko></nazwisko>
-		<data_ur></data_ur>
-		<nr_tel></nr_tel>
-		<filia></filia>
+		<imie>Jerzy</imie>
+		<nazwisko>Faraon</nazwisko>
+		<data_ur>1990-08-15</data_ur>
+		<nr_tel>750-856-896</nr_tel>
+		<filia>82000</filia>
 	</pracownik>
 	<pracownik>
-		<imie></imie>
-		<nazwisko></nazwisko>
-		<data_ur></data_ur>
-		<nr_tel></nr_tel>
-		<filia></filia>
+		<imie>Kornel</imie>
+		<nazwisko>Juwal</nazwisko>
+		<data_ur>1989-01-03</data_ur>
+		<nr_tel>784-525-362</nr_tel>
+		<filia>84100</filia>
 	</pracownik>
 	<pracownik>
-		<imie></imie>
-		<nazwisko></nazwisko>
-		<data_ur></data_ur>
-		<nr_tel></nr_tel>
-		<filia></filia>
+		<imie>Adam</imie>
+		<nazwisko>Bogdalczyk</nazwisko>
+		<data_ur>1985-02-12</data_ur>
+		<nr_tel>693-365-456</nr_tel>
+		<filia>81100</filia>
 	</pracownik>
 	</pracownicy>
 	
 	<filie>
 	<filia>
-		</miasto></miasto>
-		<ulica></ulica>
-		<nr></nr>
+		</miasto>Wejherowo</miasto>
+		<ulica>Gdańska</ulica>
+		<nr>15</nr>
 	</filia>
 	<filia>
-		</miasto></miasto>
-		<ulica></ulica>
-		<nr></nr>
+		</miasto>Rumia</miasto>
+		<ulica>Towarowa</ulica>
+		<nr>102</nr>
 	</filia>
 	<filia>
-		</miasto></miasto>
-		<ulica></ulica>
-		<nr></nr>
+		</miasto>Gdynia</miasto>
+		<ulica>Hutnicza</ulica>
+		<nr>210</nr>
 	</filia>
 	<filia>
-		</miasto></miasto>
-		<ulica></ulica>
-		<nr></nr>
+		</miasto>Gdańsk</miasto>
+		<ulica>Koparska</ulica>
+		<nr>85</nr>
 	</filia>
 	</filie>
 
 	<autadostawcze>
 	<dostawczak>
-		<marka></marka>
-		<model></model>
-		<oznaczenie></oznaczenie>
-		<filia></filia>
+		<marka>Mercedes</marka>
+		<model>Vito</model>
+		<oznaczenie>W447</oznaczenie>
+		<filia>84200</filia>
 	</dostawczak>
 	<dostawczak>
-		<marka></marka>
-		<model></model>
-		<oznaczenie></oznaczenie>
-		<filia></filia>
-	</dostawczak><dostawczak>
-		<marka></marka>
-		<model></model>
-		<oznaczenie></oznaczenie>
-		<filia></filia>
+		<marka>Mercedes</marka>
+		<model>Vito</model>
+		<oznaczenie>W638</oznaczenie>
+		<filia>84200</filia>
 	</dostawczak>
 	<dostawczak>
-		<marka></marka>
-		<model></model>
-		<oznaczenie></oznaczenie>
-		<filia></filia>
+		<marka>Citroen</marka>
+		<model>Berlingo</model>
+		<oznaczenie>1.6HDi</oznaczenie>
+		<filia>82000</filia>
+	</dostawczak>
+	<dostawczak>
+		<marka>Toyota</marka>
+		<model>ProAce</model>
+		<oznaczenie>L2H1</oznaczenie>
+		<filia>84100</filia>
 	</dostawczak>
 	</autadostawcze>
 	
 	<autaosobowe>
 	<osobowe>
-		<marka></marka>
-		<model></model>
-		<oznaczenie></oznaczenie>
-		<miejsca></miejsca>
-		<filia></filia>
+		<marka>Skoda</marka>
+		<model>Fabia</model>
+		<oznaczenie>II 1.4i</oznaczenie>
+		<miejsca>5</miejsca>
+		<filia>84200</filia>
 	</osobowe>
 	<osobowe>
-		<marka></marka>
-		<model></model>
-		<oznaczenie></oznaczenie>
-		<miejsca></miejsca>
-		<filia></filia>
+		<marka>Citroen</marka>
+		<model>C1</model>
+		<oznaczenie>1.0</oznaczenie>
+		<miejsca>4</miejsca>
+		<filia>82000</filia>
 	</osobowe>
 	<osobowe>
-		<marka></marka>
-		<model></model>
-		<oznaczenie></oznaczenie>
-		<miejsca></miejsca>
-		<filia></filia>
+		<marka>Toyota</marka>
+		<model>Avensis</model>
+		<oznaczenie>II 1.8 vvti</oznaczenie>
+		<miejsca>5</miejsca>
+		<filia>84100</filia>
 	</osobowe>
 	<osobowe>
-		<marka></marka>
-		<model></model>
-		<oznaczenie></oznaczenie>
-		<miejsca></miejsca>
-		<filia></filia>
+		<marka>Mercedes</marka>
+		<model>AMG-GT</model>
+		<oznaczenie>R Drift</oznaczenie>
+		<miejsca>2</miejsca>
+		<filia>81100</filia>
 	</osobowe>
 	</autaosobowe>
 	
 	<busy>
-	<osobowe>
-		<marka></marka>
-		<model></model>
-		<miejsca></miejsca>
-		<filia></filia>
-	</osobowe>
-	<osobowe>
-		<marka></marka>
-		<model></model>
-		<miejsca></miejsca>
-		<filia></filia>
-	</osobowe>
-	<osobowe>
-		<marka></marka>
-		<model></model>
-		<miejsca></miejsca>
-		<filia></filia>
-	</osobowe>
-	<osobowe>
-		<marka></marka>
-		<model></model>
-		<miejsca></miejsca>
-		<filia></filia>
-	</osobowe>
+	<bus>
+		<marka>Citroen</marka>
+		<model>Jumper</model>
+		<miejsca>8</miejsca>
+		<filia>82000</filia>
+	</bus>
+	<bus>
+		<marka>Toyota</marka>
+		<model>Hiace</model>
+		<miejsca>17</miejsca>
+		<filia>84100</filia>
+	</bus>
+	<bus>
+		<marka>Citroen</marka>
+		<model>SpaceTourer</model>
+		<miejsca>9</miejsca>
+		<filia>81100</filia>
+	</bus>
+	<bus>
+		<marka>Mercedes</marka>
+		<model>Sprinter</model>
+		<miejsca>20</miejsca>
+		<filia>81100</filia>
+	</bus>
 	</busy>
 	
 	<marki>
 	<marka>
-		<nazwa></nazwa>
-		<kraj></kraj>
+		<nazwa>Mercedes</nazwa>
+		<kraj>Niemcy</kraj>
 	</marka>
 	<marka>
-		<nazwa></nazwa>
-		<kraj></kraj>
+		<nazwa>Citroen</nazwa>
+		<kraj>Francja</kraj>
 	</marka>
 	<marka>
-		<nazwa></nazwa>
-		<kraj></kraj>
+		<nazwa>Skoda</nazwa>
+		<kraj>Czechy</kraj>
 	</marka>
 	<marka>
-		<nazwa></nazwa>
-		<kraj></kraj>
+		<nazwa>Toyota</nazwa>
+		<kraj>Japonia</kraj>
 	</marka>
 	</marki>
 
