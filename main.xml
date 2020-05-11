@@ -34,22 +34,22 @@
 	</pracownicy>
 	
 	<filie>
-	<filia>
+	<filia id="84200">
 		<miasto>Wejherowo</miasto>
 		<ulica>Gdańska</ulica>
 		<nr>15</nr>
 	</filia>
-	<filia>
+	<filia id="84100">
 		<miasto>Rumia</miasto>
 		<ulica>Towarowa</ulica>
 		<nr>102</nr>
 	</filia>
-	<filia>
+	<filia id="82000">
 		<miasto>Gdynia</miasto>
 		<ulica>Hutnicza</ulica>
 		<nr>210</nr>
 	</filia>
-	<filia>
+	<filia id="81100">
 		<miasto>Gdańsk</miasto>
 		<ulica>Koparska</ulica>
 		<nr>85</nr>

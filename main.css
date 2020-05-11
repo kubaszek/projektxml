@@ -1,149 +1,100 @@
 wypozyczalnia{
-	background-color: coral;
-	display: flex;
-	flex-wrap: wrap;
+	background-image: url("background.jpg");
+	display: static;
+	color: white;
+	font-family: Arial;
 }
 
 pracownicy:before{
 	content: "PRACOWNICY";
+	display: block;
+	text-align: center;
+	font-size: large;
+	font-weight: bold;
 }
+
+
 filie:before{
 	content: "FILIE WYPOŻYCZALNI";
+	display: block;
+	text-align: center;
+	font-size: large;
+	font-weight: bold;
 }
+
 firmy:before{
 	content: "MARKI POJAZDÓW";
+	display: block;
+	text-align: center;
+	font-size: large;
+	font-weight: bold;
 }
+
 autadostawcze:before{
 	content: "AUTA DOSTAWCZE";
+	display: block;
+	text-align: center;
+	font-size: large;
+	font-weight: bold;
 }
+
 autaosobowe:before{
 	content: "AUTA OSOBOWE";
+	display: block;
+	text-align: center;
+	font-size: large;
+	font-weight: bold;
 }
+
 busy:before{
 	content: "BUSY";
+	display: block;
+	text-align: center;
+	font-size: large;
+	font-weight: bold;
 }
 
-pracownicy{
-	align-self: left;
-	background-color: grey;
+pracownicy, filie, firmy, autadostawcze, autaosobowe, busy{
+	background-image: url("background2.JPG");
 	width: 25%;
-	height: 60%;
-	margin: 2.5%;
+	height: 37%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: 3%;
+	margin-right: 3%;
 	padding: 15px;
 	float: left;
-	text-align: left;
-	border-style: solid;	
+	border-style: solid;
+	text-align: center;	
 }
 
-pracownik{
+pracownik, filia, firma, dostawczak, osobowe, bus{
 	border-style: solid;
 	margin: 15px;
 	padding: 1%;
-	height: 10%;
-	display: block;
-}
-filie{
-	align-self: center;
-	background-color: grey;
-	width: 25%;
-	height: 60%;
-	margin: 2.5%;
-	padding: 15px;
-	float: left;
-	text-align: left;
-	border-style: solid;
-	
-}
-
-filia{
-	border-style: solid;
-	margin: 15px;
-	padding: 1%;
-	height: 10%;
 	display: block;
 }
 
-
-firmy{
-	align-self: right;
-	background-color: grey;
-	width: 25%;
-	height: 60%;
-	margin: 2.5%;
-	padding: 15px;
-	float: left;
-	text-align: left;
-	border-style: solid;
-}
-
-firma{
-	border-style: solid;
-	margin: 15px;
-	padding: 1%;
-	height: 10%;
+nr_tel, kraj, lokalizacja, miejsca, miejsce{
 	display: block;
+	font-size: small;
 }
 
-autadostawcze{
-	align-self: right;
-	background-color: grey;
-	width: 25%;
-	height: 60%;
-	margin: 2.5%;
-	padding: 15px;
-	float: left;
-	text-align: left;
-	border-style: solid;
+
+nr_tel:before{
+	content: "Telefon kontaktowy: ";
 }
 
-dostawczak{
-	border-style: solid;
-	margin: 15px;
-	padding: 1%;
-	height: 10%;
-	display: block;
-
+kraj:before{
+	content: "Kraj pochodzenia: ";
 }
 
-autaosobowe{
-	align-self: center;
-	background-color: grey;
-	width: 25%;
-	height: 60%;
-	margin: 2.5%;
-	padding: 15px;
-	float: left;
-	text-align: left;
-	border-style: solid;
-	
+
+lokalizacja:before, miejsce:before{
+	content: "Filia: ";
 }
 
-osobowe{
-	border-style: solid;
-	margin: 15px;
-	padding: 1%;
-	height: 10%;
-	display: block;
-}
 
-busy{
-	align-self: center;
-	background-color: grey;
-	width: 25%;
-	height: 60%;
-	margin: 2.5%;
-	padding: 15px;
-	float: left;
-	text-align: left;
-	border-style: solid;
-	
-}
-
-bus{
-	border-style: solid;
-	margin: 15px;
-	padding: 1%;
-	height: 10%;
-	display: block;
-
+miejsca:before{
+	content: "Ilość miejsc: ";
 }
