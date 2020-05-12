@@ -7,12 +7,15 @@
 <!ENTITY % dost "dostawczak">
 <!ENTITY % osob "osobowe">
 
+<!ENTITY % posezon "IGNORE">
+<!ENTITY % sezon "INCLUDE">
+
 <!ELEMENT wypozyczalnia (pracownicy, filie, firmy, %adost;, %aosob;, busy)>
 <!ELEMENT pracownicy (pracownik+)>
 <!ELEMENT filie (filia+)>
 <!ELEMENT firmy (firma*)>
-<!ELEMENT %adost; (%dost;*)>
-<!ELEMENT %aosob; (%osob;*)>
+<!ELEMENT %adost; (dostawczak*)>
+<!ELEMENT %aosob; (osobowe*)>
 <!ELEMENT busy (bus*)>
 <!ELEMENT pracownik %daneos;>
 <!ELEMENT filia (miasto,ulica,nr)>
@@ -21,7 +24,32 @@
 <!ELEMENT %osob; %daneau;>
 <!ELEMENT bus %daneau;>
 <!ATTLIST pracownik plec (k|m) #REQUIRED>
-<!ATTLIST pracownik pesel ID #REQUIRED>
+<!ATTLIST pracownik pesel CDATA #REQUIRED>
 <!ATTLIST filia id ID #REQUIRED>
-<!ATTLIST %osob; uszkodzenie #IMPLIED>
-<!ATTLIST filia godz_otw "08:00-18:00">
+<!ATTLIST %osob; uszkodzenie NMTOKENS #IMPLIED>
+
+<!ATTLIST filia kraj CDATA #FIXED "Polska">
+
+<![%posezon; [
+<!ATTLIST filia godz_otw CDATA "10:00-18:00">
+]]>
+<![%sezon; [
+<!ATTLIST filia godz_otw CDATA "08:00-19:00">
+]]>
+
+
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT data_ur (#PCDATA)>
+<!ELEMENT nr_tel (#PCDATA)>
+<!ELEMENT miejsce (#PCDATA)>
+<!ELEMENT miasto (#PCDATA)>
+<!ELEMENT ulica (#PCDATA)>
+<!ELEMENT nr (#PCDATA)>
+<!ELEMENT nazwa (#PCDATA)>
+<!ELEMENT kraj (#PCDATA)>
+<!ELEMENT marka (#PCDATA)>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT oznaczenie (#PCDATA)>
+<!ELEMENT lokalizacja (#PCDATA)>
+<!ELEMENT miejsca (#PCDATA)>

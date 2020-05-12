@@ -1,6 +1,7 @@
 wypozyczalnia{
 	background-image: url("background.jpg");
-	display: static;
+	display: flex;
+	flex-wrap: wrap;
 	color: white;
 	font-family: Arial;
 }
@@ -56,30 +57,40 @@ busy:before{
 
 pracownicy, filie, firmy, autadostawcze, autaosobowe, busy{
 	background-image: url("background2.JPG");
+	display: block;
 	width: 25%;
-	height: 37%;
+	height: 35%;
 	margin-top: 2%;
-	margin-bottom: 2%;
+	margin-bottom: 1%;
 	margin-left: 3%;
 	margin-right: 3%;
 	padding: 15px;
 	float: left;
 	border-style: solid;
+	border-radius: 20px;
 	text-align: center;	
 }
 
 pracownik, filia, firma, dostawczak, osobowe, bus{
 	border-style: solid;
+	border-radius: 10px;
 	margin: 15px;
 	padding: 1%;
 	display: block;
 }
 
-nr_tel, kraj, lokalizacja, miejsca, miejsce{
+nr_tel, kraj, lokalizacja, miejsca, miejsce,ulica,nr{
 	display: block;
 	font-size: small;
 }
 
+ulica:before{
+	content: "Ulica: ";
+}
+
+nr:before{
+	content: "Nr: ";
+}
 
 nr_tel:before{
 	content: "Telefon kontaktowy: ";

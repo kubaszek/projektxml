@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?xml-stylesheet type="text/css" href="main.css" ?>
-
+<!DOCTYPE wypozyczalnia SYSTEM "doctype.dtd">
 
 
 <wypozyczalnia>
@@ -36,22 +36,22 @@
 	</pracownicy>
 	
 	<filie>
-	<filia id="84200">
+	<filia id="w84200">
 		<miasto>Wejherowo</miasto>
 		<ulica>Gdańska</ulica>
 		<nr>15</nr>
 	</filia>
-	<filia id="84100">
+	<filia id="r84100">
 		<miasto>Rumia</miasto>
 		<ulica>Towarowa</ulica>
 		<nr>102</nr>
 	</filia>
-	<filia id="82000">
+	<filia id="g82000">
 		<miasto>Gdynia</miasto>
 		<ulica>Hutnicza</ulica>
 		<nr>210</nr>
 	</filia>
-	<filia id="81100" godz_otw="07:00-20:00">
+	<filia id="g81100" godz_otw="07:00-20:00">
 		<miasto>Gdańsk</miasto>
 		<ulica>Koparska</ulica>
 		<nr>85</nr>
@@ -84,25 +84,25 @@
 		<marka>Mercedes</marka>
 		<model>Vito</model>
 		<oznaczenie>W447</oznaczenie>
-		<lokalizacja>84200</lokalizacja>
+		<lokalizacja>w84200</lokalizacja>
 	</dostawczak>
 	<dostawczak>
 		<marka>Mercedes</marka>
 		<model>Vito</model>
 		<oznaczenie>W638</oznaczenie>
-		<lokalizacja>84200</lokalizacja>
+		<lokalizacja>w84200</lokalizacja>
 	</dostawczak>
 	<dostawczak>
 		<marka>Citroen</marka>
 		<model>Berlingo</model>
 		<oznaczenie>1.6HDi</oznaczenie>
-		<lokalizacja>82000</lokalizacja>
+		<lokalizacja>g82000</lokalizacja>
 	</dostawczak>
 	<dostawczak>
 		<marka>Toyota</marka>
 		<model>ProAce</model>
 		<oznaczenie>L2H1</oznaczenie>
-		<lokalizacja>84100</lokalizacja>
+		<lokalizacja>r84100</lokalizacja>
 	</dostawczak>
 	</autadostawcze>
 	
@@ -112,28 +112,28 @@
 		<model>Fabia</model>
 		<oznaczenie>II 1.4i</oznaczenie>
 		<miejsca>5</miejsca>
-		<lokalizacja>84200</lokalizacja>
+		<lokalizacja>w84200</lokalizacja>
 	</osobowe>
 	<osobowe>
 		<marka>Citroen</marka>
 		<model>C1</model>
 		<oznaczenie>1.0</oznaczenie>
 		<miejsca>4</miejsca>
-		<lokalizacja>82000</lokalizacja>
+		<lokalizacja>g82000</lokalizacja>
 	</osobowe>
 	<osobowe uszkodzenie="zarysowanie drzwi">
 		<marka>Toyota</marka>
 		<model>Avensis</model>
 		<oznaczenie>II 1.8 vvti</oznaczenie>
 		<miejsca>5</miejsca>
-		<lokalizacja>84100</lokalizacja>
+		<lokalizacja>r84100</lokalizacja>
 	</osobowe>
 	<osobowe>
 		<marka>Mercedes</marka>
 		<model>AMG-GT</model>
 		<oznaczenie>R Drift</oznaczenie>
 		<miejsca>2</miejsca>
-		<lokalizacja>81100</lokalizacja>
+		<lokalizacja>g81100</lokalizacja>
 	</osobowe>
 	</autaosobowe>
 	
@@ -142,28 +142,27 @@
 		<marka>Citroen</marka>
 		<model>Jumper</model>
 		<miejsca>8</miejsca>
-		<lokalizacja>82000</lokalizacja>
+		<lokalizacja>g82000</lokalizacja>
 	</bus>
 	<bus>
 		<marka>Toyota</marka>
 		<model>Hiace</model>
 		<miejsca>17</miejsca>
-		<lokalizacja>84100</lokalizacja>
+		<lokalizacja>r84100</lokalizacja>
 	</bus>
 	<bus>
 		<marka>Citroen</marka>
 		<model>SpaceTourer</model>
 		<miejsca>9</miejsca>
-		<lokalizacja>81100</lokalizacja>
+		<lokalizacja>g81100</lokalizacja>
 	</bus>
 	<bus>
 		<marka>Mercedes</marka>
 		<model>Sprinter</model>
 		<miejsca>20</miejsca>
-		<lokalizacja>81100</lokalizacja>
+		<lokalizacja>g81100</lokalizacja>
 	</bus>
 	</busy>
 	
 	
-
 </wypozyczalnia>
