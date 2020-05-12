@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!ENTITY % dane "(imie,nazwisko,data_ur,nr_tel,miejsce)">
+<!ENTITY % adost "autadostawcze">
+<!ENTITY % aosob "autaosobowe">
+<!ENTITY % dost "dostawczak">
+<!ENTITY % osob "osobowe">
+
+<!ELEMENT wypozyczalnia (pracownicy, filie, firmy, %dost;, %osob;, busy)>
+<!ELEMENT pracownicy (pracownik+)>
+<!ELEMENT filie (filia+)>
+<!ELEMENT firmy (firma*)>
+<!ELEMENT %adost; (%dost;*)>
+<!ELEMENT %aosob; (%osob;*)>
+<!ELEMENT busy (bus*)>
+<!ELEMENT pracownik %dane;>
