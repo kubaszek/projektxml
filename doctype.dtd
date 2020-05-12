@@ -1,16 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<!ENTITY % dane "(imie,nazwisko,data_ur,nr_tel,miejsce)">
+<!ENTITY % daneos "(imie,nazwisko,data_ur,nr_tel,miejsce)">
+<!ENTITY % daneau "(marka,model,oznaczenie?,miejsca?,lokalizacja)">
 <!ENTITY % adost "autadostawcze">
 <!ENTITY % aosob "autaosobowe">
 <!ENTITY % dost "dostawczak">
 <!ENTITY % osob "osobowe">
 
-<!ELEMENT wypozyczalnia (pracownicy, filie, firmy, %dost;, %osob;, busy)>
+<!ELEMENT wypozyczalnia (pracownicy, filie, firmy, %adost;, %aosob;, busy)>
 <!ELEMENT pracownicy (pracownik+)>
 <!ELEMENT filie (filia+)>
 <!ELEMENT firmy (firma*)>
 <!ELEMENT %adost; (%dost;*)>
 <!ELEMENT %aosob; (%osob;*)>
 <!ELEMENT busy (bus*)>
-<!ELEMENT pracownik %dane;>
+<!ELEMENT pracownik %daneos;>
+<!ELEMENT filia (miasto,ulica,nr)>
+<!ELEMENT firma (nazwa,kraj)>
+<!ELEMENT %dost; %daneau;>
+<!ELEMENT %osob; %daneau;>
+<!ELEMENT bus %daneau;>
+<!ATTLIST pracownik plec (k|m) #REQUIRED>
+<!ATTLIST pracownik pesel ID #REQUIRED>
+<!ATTLIST filia id ID #REQUIRED>
+<!ATTLIST %osob; uszkodzenie #IMPLIED>
+<!ATTLIST filia godz_otw "08:00-18:00">
