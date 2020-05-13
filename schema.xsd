@@ -50,22 +50,67 @@
 	</xsd:choice>
 </xsd:complexType>
 
-<xsd:complexType name="typpracownik">
+<xsd:complexType name="typpracownikb">
 	<xsd:all>
+	<xsd:element name="imie" type="xsd:string" minOccurs="1" maxOccurs="1"/>	
+	<xsd:element name="nazwisko" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+	<xsd:element name="data_ur" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+	<xsd:element name="nr_tel" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+	<xsd:element name="miejsce" type="xsd:string" minOccurs="1" maxOccurs="1"/>
 	</xsd:all>
 </xsd:complexType>
 
-<xsd:complexType name="typfilia">
+<xsd:complexType name="typfiliab">
 	<xsd:all>
+	<xsd:element name="miasto" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+	<xsd:element name="ulica" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+	<xsd:element name="nr" type="xsd:string" minOccurs="1" maxOccurs="1"/>
 	</xsd:all>
 </xsd:complexType>
 
 <xsd:complexType name="typfirma">
 	<xsd:all>
+	<xsd:element name="nazwa" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+	<xsd:element name="kraj" type="xsd:string" minOccurs="1" maxOccurs="1"/>
 	</xsd:all>
 </xsd:complexType>
 
-<xsd:complexType name="typcar">
+<xsd:complexType name="typcarb">
 	<xsd:all>
+	<xsd:element name="marka" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+	<xsd:element name="model" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+	<xsd:element name="oznaczenie" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+	<xsd:element name="miejsca" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+	<xsd:element name="lokalizacja" type="xsd:string" minOccurs="1" maxOccurs="1"/>
 	</xsd:all>
 </xsd:complexType>
+
+
+<xsd:complexType name="typpracownik">
+	<xsd:complexContent>
+	<xsd:extension base="typpracownikb">
+		<xsd:attribute name="plec" type="xsd:string" use="required"/>
+		<xsd:attribute name="pesel" type="xsd:string" use="optional"/>
+	</xsd:extension>
+    </xsd:complexContent>
+</xsd:complexType>
+
+<xsd:complexType name="typfilia">
+	<xsd:complexContent>
+	<xsd:extension base="typfiliab">
+		<xsd:attribute name="id" type="xsd:string" use="required"/>
+		<xsd:attribute name="godz_otw" type="xsd:string" use="optional"/>
+	</xsd:extension>
+    </xsd:complexContent>
+</xsd:complexType>
+
+<xsd:complexType name="typcar">
+	<xsd:complexContent>
+	<xsd:extension base="typcarb">
+		<xsd:attribute name="uszkodzenie" type="xsd:string" use="optional"/>
+	</xsd:extension>
+    </xsd:complexContent>
+</xsd:complexType>
+
+</xsd:schema>
+
