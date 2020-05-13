@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<xsd:element name="wypozyczalnia" type="typwypoz"/>
+
+<xsd:complexType name="typwypoz">
+        <xsd:all>
+        <xsd:element name="pracownicy" type="typpracownicy" minOccurs="1" maxOccurs="1"/>
+  	<xsd:element name="filie" type="typfilie" minOccurs="1" maxOccurs="1"/>
+	<xsd:element name="firmy" type="typfirmy" minOccurs="1" maxOccurs="1"/>	
+        <xsd:element name="autadostawcze" type="typautadost" minOccurs="1" maxOccurs="1"/>
+	<xsd:element name="autaosobowe" type="typautaosob" minOccurs="1" maxOccurs="1"/>
+	<xsd:element name="busy" type="typbusy" minOccurs="1" maxOccurs="1"/>
+	</xsd:all>
+ </xsd:complexType>
+
+<xsd:complexType name="typpracownicy">
+	<xsd:choice minOccurs="1" maxOccurs="20">
+		<xsd:element name="pracownik" type="typpracownik"/>
+	</xsd:choice>
+</xsd:complexType>
+
+<xsd:complexType name="typfilie">
+	<xsd:choice minOccurs="1" maxOccurs="10">
+		<xsd:element name="filia" type="typfilia"/>
+	</xsd:choice>
+</xsd:complexType>
+
+<xsd:complexType name="typfirmy">
+	<xsd:choice minOccurs="1" maxOccurs="100">
+		<xsd:element name="firma" type="typfirma"/>
+	</xsd:choice>
+</xsd:complexType>
+
+<xsd:complexType name="typautadost">
+	<xsd:choice minOccurs="0" maxOccurs="40">
+		<xsd:element name="dostawczak" type="typcar"/>
+	</xsd:choice>
+</xsd:complexType>
+
+<xsd:complexType name="typautaosob">
+	<xsd:choice minOccurs="0" maxOccurs="40">
+		<xsd:element name="osobowe" type="typcar"/>
+	</xsd:choice>
+</xsd:complexType>
+
+<xsd:complexType name="typbusy">
+	<xsd:choice minOccurs="0" maxOccurs="40">
+		<xsd:element name="bus" type="typcar"/>
+	</xsd:choice>
+</xsd:complexType>
+
+<xsd:complexType name="typpracownik">
+	<xsd:all>
+	</xsd:all>
+</xsd:complexType>
+
+<xsd:complexType name="typfilia">
+	<xsd:all>
+	</xsd:all>
+</xsd:complexType>
+
+<xsd:complexType name="typfirma">
+	<xsd:all>
+	</xsd:all>
+</xsd:complexType>
+
+<xsd:complexType name="typcar">
+	<xsd:all>
+	</xsd:all>
+</xsd:complexType>
