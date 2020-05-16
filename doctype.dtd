@@ -27,9 +27,9 @@
 <!ATTLIST pracownik pesel CDATA #REQUIRED>
 <!ATTLIST filia id ID #REQUIRED>
 <!ATTLIST %osob; uszkodzenie NMTOKENS #IMPLIED>
-<!ATTLIST %dost; cena CDATA #OPTIONAL>
-<!ATTLIST %osob; cena CDATA #OPTIONAL>
-<!ATTLIST bus; cena CDATA #OPTIONAL>
+<!ATTLIST %dost; cena CDATA #IMPLIED>
+<!ATTLIST %osob; cena CDATA #IMPLIED>
+<!ATTLIST bus cena CDATA #IMPLIED>
 
 
 <!ATTLIST filia kraj CDATA #FIXED "Polska">
