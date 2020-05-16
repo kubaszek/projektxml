@@ -10,28 +10,28 @@
 		<nazwisko>Kowalski</nazwisko>
 		<data_ur>1994-10-12</data_ur>
 		<nr_tel>730-126-456</nr_tel>
-		<miejsce>84200</miejsce>
+		<miejsce>w84200</miejsce>
 	</pracownik>
 	<pracownik plec="m" pesel="90081565352">
 		<imie>Jerzy</imie>
 		<nazwisko>Faraon</nazwisko>
 		<data_ur>1990-08-15</data_ur>
 		<nr_tel>750-856-896</nr_tel>
-		<miejsce>82000</miejsce>
+		<miejsce>g82000</miejsce>
 	</pracownik>
 	<pracownik plec="m" pesel="89010352635">
 		<imie>Kornel</imie>
 		<nazwisko>Juwal</nazwisko>
 		<data_ur>1989-01-03</data_ur>
 		<nr_tel>784-525-362</nr_tel>
-		<miejsce>84100</miejsce>
+		<miejsce>r84100</miejsce>
 	</pracownik>
 	<pracownik plec="m" pesel="85021269854">
 		<imie>Adam</imie>
 		<nazwisko>Bogdalczyk</nazwisko>
 		<data_ur>1985-02-12</data_ur>
 		<nr_tel>693-365-456</nr_tel>
-		<miejsce>81100</miejsce>
+		<miejsce>g81100</miejsce>
 	</pracownik>
 	</pracownicy>
 	

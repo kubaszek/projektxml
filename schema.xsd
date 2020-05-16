@@ -1,9 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
-<xsd:element name="wypozyczalnia" type="typwypoz"/>
-
-<xsd:complexType name="typwypoz">
+<xsd:element name="wypozyczalnia">
+<xsd:complexType>
         <xsd:all>
         <xsd:element name="pracownicy" type="typpracownicy" minOccurs="1" maxOccurs="1"/>
   	<xsd:element name="filie" type="typfilie" minOccurs="1" maxOccurs="1"/>
@@ -12,7 +11,13 @@
 	<xsd:element name="autaosobowe" type="typautaosob" minOccurs="1" maxOccurs="1"/>
 	<xsd:element name="busy" type="typbusy" minOccurs="1" maxOccurs="1"/>
 	</xsd:all>
- </xsd:complexType>
+</xsd:complexType>
+<xsd:unique name="uniquetel">
+      <xsd:selector xpath="nr_tel"/>
+      <xsd:field xpath="./pracownicy/pracownik"/>
+    </xsd:unique>
+</xsd:element>
+
 
 <xsd:complexType name="typpracownicy">
 	<xsd:choice minOccurs="1" maxOccurs="20">
@@ -51,21 +56,21 @@
 </xsd:complexType>
 
 <xsd:complexType name="typpracownikb">
-	<xsd:all>
-	<xsd:element name="imie" type="xsd:string" minOccurs="1" maxOccurs="1"/>	
-	<xsd:element name="nazwisko" type="xsd:string" minOccurs="1" maxOccurs="1"/>
-	<xsd:element name="data_ur" type="xsd:date" minOccurs="1" maxOccurs="1"/>
-	<xsd:element name="nr_tel" type="xsd:string" minOccurs="1" maxOccurs="1"/>
-	<xsd:element name="miejsce" type="xsd:string" minOccurs="1" maxOccurs="1"/>
-	</xsd:all>
+	<xsd:sequence>
+	<xsd:element name="imie" type="typimie"/>	
+	<xsd:element name="nazwisko" type="xsd:string"/>
+	<xsd:element name="data_ur" type="xsd:date"/>
+	<xsd:element name="nr_tel" type="typtelefon"/>
+	<xsd:element name="miejsce" type="xsd:string"/>
+	</xsd:sequence>
 </xsd:complexType>
 
 <xsd:complexType name="typfiliab">
-	<xsd:all>
-	<xsd:element name="miasto" type="xsd:string" minOccurs="1" maxOccurs="1"/>
-	<xsd:element name="ulica" type="xsd:string" minOccurs="1" maxOccurs="1"/>
-	<xsd:element name="nr" type="xsd:int" minOccurs="1" maxOccurs="1"/>
-	</xsd:all>
+	<xsd:sequence>
+	<xsd:element name="miasto" type="xsd:string"/>
+	<xsd:element name="ulica" type="xsd:string"/>
+	<xsd:element name="nr" type="xsd:int"/>
+	</xsd:sequence>
 </xsd:complexType>
 
 <xsd:complexType name="typfirma">
@@ -89,8 +94,8 @@
 <xsd:complexType name="typpracownik">
 	<xsd:complexContent>
 	<xsd:extension base="typpracownikb">
-		<xsd:attribute name="plec" type="xsd:string" use="required"/>
-		<xsd:attribute name="pesel" type="xsd:string" use="optional"/>
+		<xsd:attribute name="plec" type="typplec" use="required"/>
+		<xsd:attribute name="pesel" type="typpesel" use="optional"/>
 	</xsd:extension>
     </xsd:complexContent>
 </xsd:complexType>
@@ -104,15 +109,53 @@
     </xsd:complexContent>
 </xsd:complexType>
 
+<xsd:attributeGroup name="atrcar">
+	<xsd:attribute name="uszkodzenie" type="xsd:string" use="optional"/>
+	<xsd:attribute name="cena" type="typcena" use="optional"/>
+	<xsd:attribute name="przegląd" type="xsd:boolean" fixed="true"/>
+</xsd:attributeGroup>
+
 <xsd:complexType name="typcar">
 	<xsd:complexContent>
 	<xsd:extension base="typcarb">
-		<xsd:attribute name="uszkodzenie" type="xsd:string" use="optional"/>
-		<xsd:attribute name="cena" type="xsd:double" use="optional"/>
-		<xsd:attribute name="przegląd" type="xsd:boolean" fixed="true"/>
+		<xsd:attributeGroup ref="atrcar"/>
 	</xsd:extension>
     </xsd:complexContent>
 </xsd:complexType>
+
+<xsd:simpleType name="typimie">
+	<xsd:restriction base="xsd:string">
+		<xsd:minLength value="2"/>
+		<xsd:maxLength value="20"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="typtelefon">
+	<xsd:restriction base="xsd:string">
+		<xsd:pattern value="([0-9]{3}[\-]){2}[0-9]{3}"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="typpesel">
+	<xsd:restriction base="xsd:string">
+		<xsd:pattern value="[0-9]{11}"/>
+		<xsd:length value="11"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="typcena">
+	<xsd:restriction base="xsd:double">
+		<xsd:minInclusive value="2000"/>
+		<xsd:maxInclusive value="500000"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="typplec">
+	<xsd:restriction base="xsd:string">
+		<xsd:enumeration value="k"/>
+		<xsd:enumeration value="m"/>
+	</xsd:restriction>
+</xsd:simpleType>
 
 </xsd:schema>
 
