@@ -54,7 +54,7 @@
 	<xsd:all>
 	<xsd:element name="imie" type="xsd:string" minOccurs="1" maxOccurs="1"/>	
 	<xsd:element name="nazwisko" type="xsd:string" minOccurs="1" maxOccurs="1"/>
-	<xsd:element name="data_ur" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+	<xsd:element name="data_ur" type="xsd:date" minOccurs="1" maxOccurs="1"/>
 	<xsd:element name="nr_tel" type="xsd:string" minOccurs="1" maxOccurs="1"/>
 	<xsd:element name="miejsce" type="xsd:string" minOccurs="1" maxOccurs="1"/>
 	</xsd:all>
@@ -64,7 +64,7 @@
 	<xsd:all>
 	<xsd:element name="miasto" type="xsd:string" minOccurs="1" maxOccurs="1"/>
 	<xsd:element name="ulica" type="xsd:string" minOccurs="1" maxOccurs="1"/>
-	<xsd:element name="nr" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+	<xsd:element name="nr" type="xsd:int" minOccurs="1" maxOccurs="1"/>
 	</xsd:all>
 </xsd:complexType>
 
@@ -99,7 +99,7 @@
 	<xsd:complexContent>
 	<xsd:extension base="typfiliab">
 		<xsd:attribute name="id" type="xsd:string" use="required"/>
-		<xsd:attribute name="godz_otw" type="xsd:string" use="optional"/>
+		<xsd:attribute name="godz_otw" type="xsd:string" default="10:00-18:00" use="optional"/>
 	</xsd:extension>
     </xsd:complexContent>
 </xsd:complexType>
@@ -108,6 +108,8 @@
 	<xsd:complexContent>
 	<xsd:extension base="typcarb">
 		<xsd:attribute name="uszkodzenie" type="xsd:string" use="optional"/>
+		<xsd:attribute name="cena" type="xsd:double" use="optional"/>
+		<xsd:attribute name="przegląd" type="xsd:boolean" fixed="true"/>
 	</xsd:extension>
     </xsd:complexContent>
 </xsd:complexType>
