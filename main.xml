@@ -144,7 +144,7 @@
 		<miejsca>8</miejsca>
 		<lokalizacja>g82000</lokalizacja>
 	</bus>
-	<bus>
+	<bus cena="50000.00">
 		<marka>Toyota</marka>
 		<model>Hiace</model>
 		<miejsca>17</miejsca>

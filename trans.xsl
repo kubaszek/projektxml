@@ -26,22 +26,33 @@
 	<tr>
 		<td><xsl:text>Samochody</xsl:text></td>
 		<td><xsl:text>Filie</xsl:text></td>
-		<td><xsl:text>Pracownicy</xsl:text></td>
 	</tr>
 	<tr>
-		<td><xsl:text>Suma wartości aut: </xsl:text></td>
-		<td><xsl:text>Ilość filii</xsl:text></td>
-		<td><xsl:text> </xsl:text></td>
+		<td><xsl:text>Suma wartości aut osobowych: </xsl:text>
+		<xsd:value-of select="sum(//wypozyczalnia/autaosobowe/osobowe/@cena)"</td>
+		<td><xsl:text>Ilość filii</xsl:text>
+		<xsl:value-of select="count(//wypozyczalnia/filie/filia)"/></td>
 	</tr>
 	<tr>
-		<td><xsl:text>Najtańsze auto: </xsl:text></td>
-		<td><xsl:text>Numery lokali: </xsl:text></td>
-		<td><xsl:text> </xsl:text></td>
+		<td><xsl:text>Model ostatnio dodanego dostawczaka: </xsl:text>
+		<xsd:value-of select="concat(//wypozyczalnia/autadostawcze/dostawczak[position() = last()]/marka, ' ', //wypozyczalnia/autadostawcze/dostawczak[position() = last()]/model)"></td>
+
+		<td><xsl:text>Miasto filii </xsl:text>
+		<xsl:value-of select="concat('g81100:', ' ', //wypozyczalnia/filie/filia[@id = 'g81100']/miasto)"</td>
+
 	</tr>
 	<tr>
-		<td><xsl:text>Najdroższe auto: </xsl:text></td>
-		<td><xsl:text> </xsl:text></td>
-		<td><xsl:text> </xsl:text></td>
+		<td><xsl:text>Zaokrąglona średnia cena busa: </xsl:text>
+		<xsd:value-of select="round(sum(//wypozyczalnia/busy/bus/@cena) div count(//wypozyczalnia/busy/bus[@cena != 0]))"</td></td>
+		<td><xsl:text>Ilość busów w g81100</xsl:text>
+		<xsl:value-of select="count(//wypozyczalnia/busy/bus[lokalizacja = 'g81100'])"</td>
+	</tr>
+
+	<tr>
+		<td><xsl:text>Dokładna średnia cena busa: </xsl:text>
+		<xsd:value-of select="format-number(sum(//wypozyczalnia/busy/bus/@cena) div count(//wypozyczalnia/busy/bus[@cena != 0]), '0.00')"</td></td>
+		<td><xsl:text>Ilość busów w g81100</xsl:text>
+		<xsl:value-of select="count(//wypozyczalnia/busy/bus[lokalizacja = 'g81100'])"</td>
 	</tr>
 
 
