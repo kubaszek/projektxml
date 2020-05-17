@@ -1,0 +1,22 @@
+body {
+background-color: Green;
+}
+div {
+border: 3px solid Black;
+padding: 7px;
+width: 600px;
+}
+h1, h2, h3, h4, h5, h6 {
+margin: 0;
+}
+#navigation {
+float: left;
+width: 150px;
+}
+#content {
+float: left;
+width: 430px;
+}
+#footer {
+clear: both;
+}
