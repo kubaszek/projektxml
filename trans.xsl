@@ -10,7 +10,7 @@
 <body>
 
 <div id='header'>
-<h1><xsl:text>Dane statystyczne wypożyczalni "Pędziwiatr"</xsl:text></h1>
+<h1><xsl:text>Dodatkowe informacje o wypożyczalni "Pędziwiatr"</xsl:text></h1>
 </div>
 <div id='box'>
 <div id='navigation'>
@@ -56,7 +56,43 @@
 	</tr>
 	</table>
 
+	<table>
+	<xsl:comment>Tabela zawierająca imiona wszystkich męskich pracowników oraz ich numery</xsl:comment>
+	<tr>
+		<th><xsl:text>Imię</xsl:text></th>
+		<th><xsl:text>Numer Telefonu</xsl:text></th>
+	</tr>
+	<xsl:for-each select="//wypozyczalnia/pracownicy/pracownik">
+	<xsl:if test="@plec = 'm'">
+	<tr>
+	<td><xsl:value-of select="./imie"/></td>
+	<td><xsl:value-of select="./nr_tel"/></td>	
+	</tr>
+	</xsl:if>
+	</xsl:for-each>
+	</table>
 
+	<table>
+	<xsl:comment>Tabela zawierająca imiona i płci wszystkich pracowników posortowane od najstarszego</xsl:comment>
+	<tr>
+		<th><xsl:text>Imię</xsl:text></th>
+		<th><xsl:text>Płeć</xsl:text></th>
+	</tr>
+	<xsl:for-each select="//wypozyczalnia/pracownicy/pracownik">
+	<xsl:sort select="./@pesel" order="ascending"/>
+	<tr>
+	<td><xsl:value-of select="./imie"/></td>
+	<xsl:choose>
+		<xsl:when test="@plec = 'm'">
+		<td><xsl:text>Mężczyzna</xsl:text></td>
+		</xsl:when>
+		<xsl:otherwise>
+		<td><xsl:text>Kobieta</xsl:text></td> 
+		</xsl:otherwise>
+	</xsl:choose>	
+	</tr>
+	</xsl:for-each>
+	</table>
 </div>
 </div>
 

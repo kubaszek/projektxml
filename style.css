@@ -21,6 +21,7 @@ table {
 	margin: 40px;
 	display: inline-block;
 	border: 3px solid white;
+	border-radius: 10px;
 	border-collapse: collapse;
 }
 td, th {
