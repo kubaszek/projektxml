@@ -80,7 +80,7 @@
 
 
 	<autadostawcze>
-	<dostawczak>
+	<dostawczak cena="19032.20">
 		<marka>Mercedes</marka>
 		<model>Vito</model>
 		<oznaczenie>W447</oznaczenie>
@@ -92,7 +92,7 @@
 		<oznaczenie>W638</oznaczenie>
 		<lokalizacja>w84200</lokalizacja>
 	</dostawczak>
-	<dostawczak>
+	<dostawczak cena="25662.10">
 		<marka>Citroen</marka>
 		<model>Berlingo</model>
 		<oznaczenie>1.6HDi</oznaczenie>
@@ -107,28 +107,28 @@
 	</autadostawcze>
 	
 	<autaosobowe>
-	<osobowe>
+	<osobowe cena="14632.20">
 		<marka>Skoda</marka>
 		<model>Fabia</model>
 		<oznaczenie>II 1.4i</oznaczenie>
 		<miejsca>5</miejsca>
 		<lokalizacja>w84200</lokalizacja>
 	</osobowe>
-	<osobowe>
+	<osobowe cena="24852.90">
 		<marka>Citroen</marka>
 		<model>C1</model>
 		<oznaczenie>1.0</oznaczenie>
 		<miejsca>4</miejsca>
 		<lokalizacja>g82000</lokalizacja>
 	</osobowe>
-	<osobowe uszkodzenie="zarysowanie drzwi">
+	<osobowe uszkodzenie="zarysowanie drzwi" cena="34236.50">
 		<marka>Toyota</marka>
 		<model>Avensis</model>
 		<oznaczenie>II 1.8 vvti</oznaczenie>
 		<miejsca>5</miejsca>
 		<lokalizacja>r84100</lokalizacja>
 	</osobowe>
-	<osobowe cena="780000.00">
+	<osobowe cena="780200.10">
 		<marka>Mercedes</marka>
 		<model>AMG-GT</model>
 		<oznaczenie>R Drift</oznaczenie>
@@ -138,25 +138,25 @@
 	</autaosobowe>
 	
 	<busy>
-	<bus>
+	<bus cena="95852.90">
 		<marka>Citroen</marka>
 		<model>Jumper</model>
 		<miejsca>8</miejsca>
 		<lokalizacja>g82000</lokalizacja>
 	</bus>
-	<bus cena="50000.00">
+	<bus cena="50063.60">
 		<marka>Toyota</marka>
 		<model>Hiace</model>
 		<miejsca>17</miejsca>
 		<lokalizacja>r84100</lokalizacja>
 	</bus>
-	<bus>
+	<bus cena="40269.20">
 		<marka>Citroen</marka>
 		<model>SpaceTourer</model>
 		<miejsca>9</miejsca>
 		<lokalizacja>g81100</lokalizacja>
 	</bus>
-	<bus>
+	<bus cena="85210.20">
 		<marka>Mercedes</marka>
 		<model>Sprinter</model>
 		<miejsca>20</miejsca>
