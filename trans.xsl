@@ -2,6 +2,7 @@
 <xsl:output method="html" indent="yes" encoding="UTF-8"/>
 
 <xsl:template match="/">
+<xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
 <html>
 	<head>
 		<title><xsl:text>statystyki</xsl:text></title>
